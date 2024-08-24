@@ -17,8 +17,8 @@ int main(){
     return 0;
 }*/
 //QUESTION -02
-#include <iostream>
-
+#include <bits/stdc++.h>
+using namespace std;
 class Complex {
 private:
     double real;    // Real part
@@ -47,16 +47,16 @@ public:
     }
 
     // Overload the >> operator for input
-    friend std::istream& operator>>(std::istream& is, Complex& c) {
-        std::cout << "Enter real part: ";
+    friend istream& operator>>(istream& is, Complex& c) {
+        cout << "Enter real part: ";
         is >> c.real;
-        std::cout << "Enter imaginary part: ";
+        cout << "Enter imaginary part: ";
         is >> c.imag;
         return is;
     }
 
     // Overload the << operator for output
-    friend std::ostream& operator<<(std::ostream& os, const Complex& c) {
+    friend ostream& operator<<(ostream& os, const Complex& c) {
         if (c.imag >= 0)
             os << c.real << " + " << c.imag << "i";
         else
@@ -69,20 +69,20 @@ int main() {
     Complex c1, c2;
 
     // Take input for complex numbers
-    std::cout << "Enter first complex number:\n";
-    std::cin >> c1;
-    std::cout << "Enter second complex number:\n";
-    std::cin >> c2;
+    cout << "Enter first complex number:\n";
+    cin >> c1;
+    cout << "Enter second complex number:\n";
+    cin >> c2;
 
     // Perform addition and subtraction
     Complex sum = c1 + c2;
     Complex difference = c1 - c2;
 
     // Output results
-    std::cout << "First complex number: " << c1 << std::endl;
-    std::cout << "Second complex number: " << c2 << std::endl;
-    std::cout << "Sum: " << sum << std::endl;
-    std::cout << "Difference: " << difference << std::endl;
+    cout << "First complex number: " << c1 << endl;
+    cout << "Second complex number: " << c2 << endl;
+    cout << "Sum: " << sum << endl;
+    cout << "Difference: " << difference << endl;
 
     return 0;
 }
