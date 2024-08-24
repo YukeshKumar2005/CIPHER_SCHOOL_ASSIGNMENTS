@@ -1,4 +1,5 @@
-/*#include <iostream>
+/* QUESTION 1:
+#include <iostream>
 using namespace std;
 int main(){
     string s1,s2;
@@ -9,6 +10,7 @@ int main(){
     cout<<"Concatenated string: "<<s1+s2<<endl;
     return 0;
 }
+QUESTION -2
 #include<iostream>
 #include<string>
 int main(){
@@ -21,6 +23,7 @@ int main(){
     }
     std::cout<<"The average grade is: "<<temp/5;
 }*/
+//QUESTION-3
 #include <iostream>
 #include<string>
 int square(int n){
