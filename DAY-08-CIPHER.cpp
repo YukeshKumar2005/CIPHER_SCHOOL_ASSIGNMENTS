@@ -18,7 +18,9 @@ int main(){
     cout<<result;
     return 0;
 }
-*/
+
+QUESTION-02
+    
 #include <iostream>
 using namespace std;
 
@@ -41,5 +43,22 @@ int main(){
     cin>>ch;
     int result=countCharacter(str,ch);
     cout<<result<<endl;
+    return 0;
+}*/
+#include <iostream>
+using namespace std;
+
+string concatenateStrings(const string &str1,const string &str2){
+    string str=str1+str2;
+    return str;
+}
+
+int main(){
+    string str1,str2;
+    cout<<"Enter first string: ";
+    getline(cin,str1);
+    cout<<"Enter second string: ";
+    getline(cin,str2);
+    cout<<concatenateStrings(str1,str2);
     return 0;
 }
